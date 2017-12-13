@@ -4,8 +4,8 @@ import (
 	"bufio"
 	"fmt"
 	"os"
-	"strings"
 	"strconv"
+	"strings"
 )
 
 func getLargestBlock(d []int) (i int) {
@@ -28,7 +28,7 @@ func distributeBlock(d []int, b int) (n []int) {
 
 	// distribute the block
 	for i := 1; i <= dist; i++ {
-		n[(b + i) % len(d)]++
+		n[(b+i)%len(d)]++
 	}
 
 	return

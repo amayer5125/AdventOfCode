@@ -4,8 +4,8 @@ import (
 	"bufio"
 	"fmt"
 	"os"
-	"strings"
 	"strconv"
+	"strings"
 )
 
 func main() {
@@ -27,7 +27,7 @@ func main() {
 	// loop through each security layer
 	for _, v := range layers {
 		// check if the scanner will be at the top of the layer when we get there
-		if v[0] % ((v[1] * 2) - 2) == 0 {
+		if v[0]%((v[1]*2)-2) == 0 {
 			t += v[0] * v[1]
 		}
 	}

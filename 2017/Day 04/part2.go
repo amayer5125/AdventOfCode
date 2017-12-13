@@ -31,7 +31,7 @@ func isValid(s string) bool {
 
 				// if we are on the last letter of the word
 				// and they all matched then this is not a valid passphrase
-				if i == len(v) - 1 {
+				if i == len(v)-1 {
 					return false
 				}
 			}

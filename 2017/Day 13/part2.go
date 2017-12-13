@@ -4,8 +4,8 @@ import (
 	"bufio"
 	"fmt"
 	"os"
-	"strings"
 	"strconv"
+	"strings"
 )
 
 func main() {
@@ -33,7 +33,7 @@ func main() {
 
 		// loop through each layer and check if we actually escaped
 		for _, v := range layers {
-			if (pico_second + v[0]) % ((v[1] * 2) - 2) == 0 {
+			if (pico_second+v[0])%((v[1]*2)-2) == 0 {
 				escaped = false
 				break
 			}
